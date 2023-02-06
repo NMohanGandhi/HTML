@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tags</title>
+    <style>
+        table{
+            background-color: darkcyan;
+            padding: 10px 60px;
+            border: 2px solid red;
+
+        }
+        td{
+            padding: 20px;
+        }
+
+        input{
+            font-size: 20px;
+        }
+
+        #Register{
+            /* color: chartreuse; */
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        #Register:hover{
+            background-color: chartreuse;
+            color: black;
+        }
+
+        #clear{
+            /* color: crimson; */
+            background-color: orangered;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form method="post">
+        <table style="font-size: 30px;">
+            <tr>
+                <th>Username:</th>
+                <td><input type="text" name="uname"></td>
+            </tr>
+            
+            <tr>
+                <th>Password:</th>
+                <td><input type="text" name="pwd1"></td>
+            </tr>
+
+            <tr>
+
+                <th>Confirm Password:</th>
+                <td><input type="text" name="pwd2"></td>
+            </tr>
+
+            <tr>
+                <th>Email:</th>
+                <td><input type="text" name="email"></td>
+            </tr>
+
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="Others">Others
+                </td>
+
+
+                <tr>
+                    <th>Phone Number:</th>
+                    <td>
+                        <select>
+                            <option value="91">91</option>
+                            <option value="80">80</option>
+                            <option value="97">97</option>
+                            <option value="89">89</option>
+                        </select>
+                        <input type="number" name="number">
+                    </td>
+                </tr>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" value="Register" id="Register">
+                    <input type="reset" value="clear" id ="clear">
+                </td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td>
+                    <p>
+                        Already do you have an Account?
+                        <a href="Login.html" style="color: white;">Login</a>
+
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
